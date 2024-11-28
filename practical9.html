@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style>
+    body{
+    background-color: #f9F7fe;
+}
+a{
+    color: rgb(123, 3, 123);
+}
+header{
+    padding: 0 0 10px 0;
+    border-top: 5px solid rgb(175, 172, 172);
+    text-align: center;
+    text-decoration: underlines;
+}
+.weather-app{
+    background-color: rgb(175, 172, 172);
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 30px;
+}
+h2{
+    color: rgb(81, 49, 10);
+}
+.weather-app-temperature-container{
+    display: flex;
+    padding: 40px 0 0 0;
+    border-top: 30px solid rgb(175, 172, 172);
+    line-height: 30px;
+    text-transform: capitalize;
+}
+.weather-data{
+    display: flex;
+    justify-content: space-between;
+}
+.weather-app-icon{
+    height: 80px;
+    width: 80px;
+    line-height: 20px;
+    padding-bottom: 10px;
+    margin-top: 3px;
+}
+.weather-app-temperature{
+font-size:80px ;
+margin-left: 10px;
+font-weight: bold;
+}
+.weather-app-unit{
+    margin-top: 16px;
+    font-size: 28px;
+}
+.Humidity{
+color:rgb(123, 3, 123);
+font-weight: bold;
+}
+.form-input{
+    text-decoration: solid;
+    border: none;
+    width: 70%;
+    border-color: blueviolet;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px 15px;
+}
+.form-button{
+    border: none;
+    background-color: rgb(123, 3, 123);
+    color:whitesmoke;
+    padding: 10px 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-left: 5px;
+    border-radius: 9px;
+}
+footer{
+    padding: 0 0 10px 0;
+    border-top: 5px solid rgb(175, 172, 172);
+    color: rgba(0, 0, 0, 5);
+    font-size: 13px;
+}
+    .p{
+        text-align: center;
+    }
+    .days{
+        display: flex;
+        justify-content: space-between;
+    }
+    h4{
+        color: purple;
+        font-size: 15px;
+    }
+    h4 span{
+        color: rgb(173, 114, 173);
+    }
+</style>
+<body>
+    <div class="weather-app">
+        <header>
+         <div>   <h2>Welcome to Our waether application</h2></div>
+        </header>
+  
+    <main>
+        <div>
+            <form action="" class="search-form" id="search-form">
+                <input type="search" name="city" id="city-name" placeholder="Enter City Name" required class="form-input"/>
+                <button type="submit" class="form-button">search</button>
+            </form>
+        </div>
+        <div class="weather-data">
+            <h3>Paris ☀
+                I8&deg;C</h3>
+           
+            <div class="weather-app-temperature-container">
+                <div class="" id="weather-app-icon">
+                    <img src="http://shecodes.assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png" alt="not loading" class="weather-app-icon">
+                </div>
+                <div class="weather-app-temperature" id="currenttemperature">12</div>
+                <div class="weather-app-unit">&deg;C</div>
+
+            </div>
+        </div>
+        <div>
+            <p>
+                <span id="currenttime">
+                    Tuesday
+                    14:40
+                </span>
+                <span id="weatherescription">
+                    scattered clouds
+                </span>
+                <br>
+                Humidity
+                <span id="Humidity" class="Humidity">
+                    66
+                </span>
+                ,wind speed:
+                    <span id="windspeed">
+                        4.3
+                    </span>
+            </p>
+        </div>
+    </main>
+    <footer>
+        <div class="days">
+            <div class="mon">
+                <h4>Mon</h4>
+                <img src="http://shecodes.assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png" alt="not loading" class="weather-app-icon">
+                <h4>15 &deg;  <span>19 &deg;</span></h4>
+            </div>
+            <div class="tue">
+                <h4>Tue</h4>
+                <img src="http://shecodes.assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png" alt="not loading" class="weather-app-icon">
+                <h4>15 &deg;  <span>19 &deg;</span></h4>
+            </div>
+            <div class="wen">
+                <h4>Wen</h4>
+                <img src="http://shecodes.assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png" alt="not loading" class="weather-app-icon">
+                <h4>15 &deg;  <span>19 &deg;</span></h4>
+            </div>
+            <div class="thur">
+                <h4>Thur</h4>
+                <img src="http://shecodes.assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png" alt="not loading" class="weather-app-icon">
+                <h4>15 &deg;  <span>19 &deg;</span></h4>
+            </div>
+            <div class="fri">
+                <h4>Fri</h4>
+                <img src="http://shecodes.assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png" alt="not loading" class="weather-app-icon">
+                <h4>15 &deg;  <span>19 &deg;</span></h4>
+            </div>
+            <div class="sat">
+                <h4>Sat</h4>
+                <img src="http://shecodes.assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png" alt="not loading" class="weather-app-icon">
+                <h4>15 &deg;  <span>19 &deg;</span></h4>
+            </div>
+            <div class="sun">
+                <h4>Sun</h4>
+                <img src="http://shecodes.assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png" alt="not loading" class="weather-app-icon">
+                <h4>15 &deg; <span>19 &deg;</span></h4>
+            </div>
+        </div>
+        <div class="p">
+            Coded by <a href="https://github.com/ainga-byron" target="_blank">Byron Ainga</a>
+            and is on <a href="https://github.com/ainga-byron/week7-Weather-API"></a>
+            and hosted by
+            <a href="https://ainga-byronweatherapp.netify.app/" target="_blank">Netify</a>
+            <br>
+            The design was done using <a href="https://www.figma.com" target="_blank">Figma</a>
+        </div>
+    </footer>
+    </div>
+    <script>
+        function refreshweather(currentweather){
+   // document.write(currentweather.data.temperature.current);
+   //let currentTemperature=Math.round(currentweather.data.temperature.current);
+   //documment.write(currentTemperature);
+   //display the temperature
+   let currentTemperatureValue=document.querySelector("#curretnttemperaturevalue");
+   //currentTemperatureValue.InnerHtml=currentemperature;
+   currentTemperatureValue.innerHTML=Math.round(currentweather.data.temperature.current);
+   //display the weater description
+   let weatherdescription=document.querySelector("#weatherdescription");
+   weatherdescription.innerHTML=currentweather.data.condition.description;
+   let currentWeathericon=document.querySelector("#weather-app-icon");
+   currentWeathericon.innerHTML=<img src="${currentweather.data.condition.icon_url" 
+   alt="not loading" 
+   class="weather-app-icon"></img>
+   console.log(currentweather.data);
+   //display humidity
+   let humidity=document.querySelector("#Humidity");
+   humidity.innerHTML='${currentweather.data.temperature.humidity}%';
+   // display wind speed
+   let windspeed=document.querySelector("#windspeed");
+   windspeed.innerHTML='${currentweather.data.windspeed}knots'
+   //display the day and time
+   let currentTime=document.querySelector("#currenttime");
+   let date= new Date(currentweather.data.time*1000);
+   currentTime.innerHTML=FormDate(date);
+}
+function formatDate(date){
+    let minutes=date.getMinutes();
+    let hours=date.getHours();
+    let days=["Monday",
+        "Tuesday",
+        "Wednesday",
+        "Tursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+    ]
+    let day=days[date.getDays()];
+    if(minutes<10){
+        minutes='0${minutes}';
+    }
+    return '${day} ${hours}:${minutes}';
+}
+function searchcity(currentcityname){
+    let apiKey="73of19a03ad06t05b21e8521b4860f";
+    let apiurl='https://shecodes.io.weather/v1/current?query=$(currentcityName)&key=${apiKey';
+    //console.log(currentcityName);
+    axios.get(apiurl).then(refreshweather);
+    //console.log(apiurl)
+}
+function displayCity(event){
+event.preventDefault();
+let cityName=document.querySelector("#cityName");
+let cityNameDisplayed=document.querySelector("h3");
+cityNameDisplayed.innerHTML=cityName.value;
+
+currentcityname=cityName.value;
+searchcity(currentcityname);
+}
+let searchForm=document.querySelector("#searchForm");
+searchForm.addEventListener("submit",displayCity);
+    </script>
+</body>
+</html>

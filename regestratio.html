@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        align-items: center;
+    }
+    .form{
+     margin: auto;
+     padding-bottom: 30px;
+    }
+   h1{
+    text-align: center;
+   }
+  p{
+    margin-top: 0;
+    margin-bottom: 2px;
+   margin-left: 130px;
+  }
+  span{
+    color: red;
+    margin-inline-start: 55px;
+  }
+  .div1 input{
+    margin-inline-start: 50px;
+  }
+  .div2 input{
+    margin-inline-start: 57px;
+  }
+  .div4 input{
+    margin-inline-start: 80px;
+  }
+  .div5 input{
+    margin-inline-start: 20px;
+  }
+  .div6 input{
+    margin-inline-start: 50px;
+  }
+  .div8 input{
+    margin-inline-start: 30px;
+  }
+  .div9 input{
+    margin-inline-start: 15px;
+  }
+ .div7 select{
+    margin-inline-start: 50px;
+    background-color: white;
+ }
+ .button{
+    margin-left: 200px;
+    
+ }
+ input{
+    margin-bottom:4px ;
+ }
+ select{
+    margin-bottom: 4px;
+ }
+</style>
+<body>
+ <h1>Register Account</h1>
+ <div class="form">
+    <form action=" ">
+        <div class="div1">
+            <label for="name" id="name">Full Name:</label>
+        <input type="text" id="name" name="name"> <span>User name must be atleast 4 characters</span>
+        </div>
+        <div class="div2">
+            <label for="password" id="password">Password:</label>
+        <input type="password" id="password" name="password"> <span>Password must be atleast 4 characters</span>
+        </div>
+        <div class="div3">
+            <label for="confirm" id="name">Confirm Password:</label>
+        <input type="password" id="password" name="password"><span>Password do not match</span>
+        </div>
+        <div class="div4">
+            <label for="email" id="email">Email:</label>
+        <input type="email" id="email" name="nemail"><span>Invalid email format</span>
+        <p>Format: john@gmail.com</p>
+        </div>
+        <div class="div5">
+            <label for="number" id="number">Phone Number:</label>
+        <input type="text" id="number" name="number"><span>Invalid Phone Number</span>
+        <p>Format:0XXX-XXX-XXX</p>
+        </div>
+        
+        <div class="div6">
+            <label for="zip" id="zip">Zip Codee:</label>
+        <input type="text" id="number" name="number"><span>Invalid Zip Code</span>
+        <p>Format:Use 5 or 9 digits Zip Code</p>
+        </div>
+        <div class="div7">
+            <label for="cardtype">Card Type:</label>
+            <select name="cardtype" id="cardtype"><option value="">Visa</option>
+            <option value="">Master Card</option></select>
+        </div>
+        <div class="div8">
+            <label for="Code" id="code"><Code></Code>Card Number:</label>
+        <input type="text" id="code" name="code"> <span>Invalid Card Number</span>
+        <p>Format:1111-2222-3333-444</p>
+        </div>
+        <div class="div9">
+            <label for="date" id="date">Expiration Date:</label>
+        <input type="text" id="date" name="date"><span>Invalid Date format</span>
+        <p>Format:YYYY-MM-DD</p>
+        </div>
+      <div class="button">
+        <button>Register</button>
+        <button>Clear Form</button>
+      </div>
+</form>
+ </div>   
+</body>
+</html>
